@@ -4,6 +4,9 @@ import bg from "./assets/background.png";
 import logo from "./assets/Logo.png";
 import fridgeImg from "./assets/fridge.png";
 import budgetImg from "./assets/budget.png";
+import locationImg from "./assets/location.png";
+import chattingImg from "./assets/chatting.jpg";
+import planningImg from "./assets/planning.jpg";
 
 function App() {
   return (
@@ -104,10 +107,10 @@ function App() {
           <div className="statement">
             <p className="text-primary text-statement">
               <span style={{ color: "var(--dark)" }}>
-                Тёплая, спокойная и технологичная
+                Тёплая, спокойная и технологичная{" "}
               </span>
-              семейная экосистема — всё необходимое без лишних деталей
-              ивизуальной перегрузки.
+              семейная экосистема — всё необходимое без лишних деталей и
+              визуальной перегрузки.
             </p>
           </div>
           <div className="info">
@@ -116,12 +119,140 @@ function App() {
                 <div className="card-image">
                   <img src={fridgeImg} alt="Fridge image" />
                 </div>
-                <div className="content">sdfsfd</div>
+                <div className="content">
+                  <div className="roadmap">
+                    <div className="circle"></div>
+                    <p className="text-tertiary">Холодильник</p>
+                  </div>
+                  <h2 className="text-primary" style={{ marginTop: "0px" }}>
+                    Смотрите когда угодно, а не только дома
+                  </h2>
+                  <p className="text-secondary" style={{ marginTop: "0px" }}>
+                    Актуальный список продуктов дома, доступный всей семье. Не
+                    покупайте то, что уже есть, и не оставайтесь без того, что
+                    уже закончилось.
+                  </p>
+                </div>
               </div>
               <div className="card-grid card-info">
-                <div className="content">asdsadsa</div>
+                <div className="content">
+                  <div className="roadmap">
+                    <div className="circle"></div>
+                    <p className="text-tertiary">Бюджет</p>
+                  </div>
+                  <h2 className="text-primary" style={{ marginTop: "0px" }}>
+                    Считайте свой бюджет, вплоть до копейки
+                  </h2>
+                  <p className="text-secondary" style={{ marginTop: "0px" }}>
+                    Что-то потратили - отметили в бюджете, что-то получили -
+                    отметили в бюджете. Всё в одной экосистеме!
+                  </p>
+                </div>
                 <div className="card-image">
                   <img src={budgetImg} alt="Budget image" />
+                </div>
+              </div>
+              <div className="card-grid card-info">
+                <div className="card-image">
+                  <img src={chattingImg} alt="Fridge image" />
+                </div>
+                <div className="content">
+                  <div className="roadmap">
+                    <div className="circle"></div>
+                    <p className="text-tertiary">Чаты</p>
+                  </div>
+                  <h2 className="text-primary" style={{ marginTop: "0px" }}>
+                    Всегда на связи с родными
+                  </h2>
+                  <p className="text-secondary" style={{ marginTop: "0px" }}>
+                    Создавайте чаты, обсуждайте планы, договаривайтесь о делах и
+                    делитесь самым важным. Всё в одном месте!
+                  </p>
+                </div>
+              </div>
+              <div className="card-grid card-info">
+                <div className="content">
+                  <div className="roadmap">
+                    <div className="circle"></div>
+                    <p className="text-tertiary">Календарь</p>
+                  </div>
+                  <h2 className="text-primary" style={{ marginTop: "0px" }}>
+                    Планируйте дела и мероприятия вместе
+                  </h2>
+                  <p className="text-secondary" style={{ marginTop: "0px" }}>
+                    Общие планы, личные события и важные напоминания собраны в
+                    одном календаре, чтобы ничего не упустить и не забыть.
+                  </p>
+                </div>
+                <div className="card-image">
+                  <img src={planningImg} alt="Budget image" />
+                </div>
+              </div>
+              <div className="card-grid card-info" id="last-card-info">
+                <div className="card-image">
+                  <img src={locationImg} alt="Fridge image" />
+                </div>
+                <div className="content">
+                  <div className="roadmap">
+                    <div className="circle"></div>
+                    <p className="text-tertiary">Геолокация</p>
+                  </div>
+                  <h2 className="text-primary" style={{ marginTop: "0px" }}>
+                    Всегда знайте, где находятся близкие
+                  </h2>
+                  <p className="text-secondary" style={{ marginTop: "0px" }}>
+                    Смотрите локации членов семьи в реальном времени и всегда
+                    оставайтесь в курсе, где находятся ваши близкие.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className="visual-info">
+            <div className="visual-info-wrapper">
+              <div className="content">
+                <p className="text-tertiary soft-green text">
+                  Единый визуальный язык
+                </p>
+                <h2 className="text-primary warm-white text">
+                  Один и тот же приятный стиль на любом экране
+                </h2>
+                <p className="text-secondary soft-green text">
+                  Все компоненты веб-приложения соответсвуют специальной
+                  цветовой палитре: тёпло-белый нейтральный фон, зелёный и
+                  оранжевый для взаимодействия с функционалом.
+                </p>
+              </div>
+            </div>
+            <div className="visual-info-wrapper">
+              <div className="content-info-2">
+                <div className="task-1">
+                  <p className="text-tertiary">
+                    Молоко заканчивается — добавить в список?
+                  </p>
+                  <a href="#">Открыть холодильник</a>
+                </div>
+                <div className="task-2">
+                  <p className="text-tertiary">
+                    Папа создал событие «Семейный ужин» на 19:00
+                  </p>
+                  <a href="#">Календарь</a>
+                </div>
+                <div className="task-3">
+                  <h1
+                    className="text-primary warm-white"
+                    style={{ marginTop: "0px" }}
+                  >
+                    Famigo
+                  </h1>
+                  <p
+                    className="text-tertiary soft-green"
+                    style={{ marginTop: "-10px" }}
+                  >
+                    Папа создал событие «Семейный ужин» на 19:00
+                  </p>
                 </div>
               </div>
             </div>
