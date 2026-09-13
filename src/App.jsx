@@ -1,11 +1,11 @@
 import "./App.css";
-import bg from "./assets/background.png";
+import bg from "./assets/background.webp";
 import logo from "./assets/Logo.svg";
-import fridgeImg from "./assets/fridge.png";
-import budgetImg from "./assets/budget.png";
-import locationImg from "./assets/location.png";
-import chattingImg from "./assets/chatting.jpg";
-import planningImg from "./assets/planning.jpg";
+import fridgeImg from "./assets/fridge.webp";
+import budgetImg from "./assets/budget.webp";
+import locationImg from "./assets/location.webp";
+import chattingImg from "./assets/chatting.webp";
+import planningImg from "./assets/planning.webp";
 import Reveal from "./components/Reveal";
 
 function App() {
@@ -39,7 +39,12 @@ function App() {
       <main>
         <section className="hero">
           <div className="bg">
-            <img src={bg} alt="Семья вместе дома"></img>
+            <img
+              src={bg}
+              alt="Семья вместе дома"
+              fetchpriority="high"
+              decoding="async"
+            ></img>
             <div className="tone"></div>
           </div>
           <div className="hero-row">
@@ -121,7 +126,12 @@ function App() {
             <div className="info-section">
               <Reveal className="card-grid card-info">
                 <div className="card-image">
-                  <img src={fridgeImg} alt="Fridge image" />
+                  <img
+                    src={fridgeImg}
+                    alt="Fridge image"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </div>
                 <div className="content">
                   <div className="roadmap">
@@ -154,13 +164,23 @@ function App() {
                   </p>
                 </div>
                 <div className="card-image">
-                  <img src={budgetImg} alt="Budget image" />
+                  <img
+                    src={budgetImg}
+                    alt="Budget image"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </div>
               </Reveal>
 
               <Reveal className="card-grid card-info">
                 <div className="card-image">
-                  <img src={chattingImg} alt="Fridge image" />
+                  <img
+                    src={chattingImg}
+                    alt="Fridge image"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </div>
                 <div className="content">
                   <div className="roadmap">
@@ -192,13 +212,23 @@ function App() {
                   </p>
                 </div>
                 <div className="card-image">
-                  <img src={planningImg} alt="Budget image" />
+                  <img
+                    src={planningImg}
+                    alt="Budget image"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </div>
               </Reveal>
 
               <Reveal className="card-grid card-info" id="last-card-info">
                 <div className="card-image">
-                  <img src={locationImg} alt="Fridge image" />
+                  <img
+                    src={locationImg}
+                    alt="Fridge image"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </div>
                 <div className="content">
                   <div className="roadmap">
