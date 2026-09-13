@@ -268,7 +268,7 @@ function App() {
             <div className="possibilities-grid">
               <div className="possibility-wrapper">
                 <div className="possibility">
-                  <div class="icon">
+                  <div className="icon">
                     <svg
                       width="18"
                       height="18"
@@ -292,7 +292,7 @@ function App() {
               </div>
               <div className="possibility-wrapper">
                 <div className="possibility">
-                  <div class="icon">
+                  <div className="icon">
                     <svg
                       width="18"
                       height="18"
@@ -307,14 +307,14 @@ function App() {
                   </div>
                   <h3 className="text-primary">Дома и пространства</h3>
                   <p className="text-secondary">
-                    Приглашайте близких по ссылке, назначайте роли и держите
-                    всех в курсе того, что происходит дома.
+                    Квартира, дача, дом родителей — каждое пространство со своим
+                    составом жильцов и бюджетом.
                   </p>
                 </div>
               </div>
               <div className="possibility-wrapper">
                 <div className="possibility">
-                  <div class="icon">
+                  <div className="icon">
                     <svg
                       width="18"
                       height="18"
@@ -335,7 +335,7 @@ function App() {
               </div>
               <div className="possibility-wrapper">
                 <div className="possibility">
-                  <div class="icon">
+                  <div className="icon">
                     <svg
                       width="18"
                       height="18"
@@ -350,14 +350,13 @@ function App() {
                   </div>
                   <h3 className="text-primary">Холодильник</h3>
                   <p className="text-secondary">
-                    Список продуктов по категориям и срокам годности — видно
-                    всей семье, не только тому, кто заглянул внутрь.
+                    Список продуктов, который доступен всегда и везде.
                   </p>
                 </div>
               </div>
               <div className="possibility-wrapper">
                 <div className="possibility">
-                  <div class="icon">
+                  <div className="icon">
                     <svg
                       width="18"
                       height="18"
@@ -380,7 +379,7 @@ function App() {
               </div>
               <div className="possibility-wrapper">
                 <div className="possibility">
-                  <div class="icon">
+                  <div className="icon">
                     <svg
                       width="18"
                       height="18"
@@ -396,6 +395,214 @@ function App() {
                   <p className="text-secondary possibility-secondary-text">
                     Обсуждайте планы и мелочи в общем чате, не выходя из Famigo.
                   </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="section">
+          <div className="team-wrapper">
+            <h2 className="text-primary">Команда проекта</h2>
+            <div className="team-grid">
+              <div className="developer">
+                <div className="developer-content-wrapper">
+                  <div className="avatar">ЦА</div>
+                  <h3 className="text-primary text-17px">Цейсновский А.Э.</h3>
+                  <p className="text-tertiary">Тимлид / разработчик</p>
+                  <p className="text-tertiary">
+                    Архитектура проекта, разработка, координация команды
+                  </p>
+                </div>
+              </div>
+              <div className="developer">
+                <div className="developer-content-wrapper">
+                  <div className="avatar">ЛС</div>
+                  <h3 className="text-primary text-17px">Лапутин С.А.</h3>
+                  <p className="text-tertiary">Разработчик / аналитик</p>
+                  <p className="text-tertiary">
+                    Анализ требований, разработка, проработка функциональности
+                  </p>
+                </div>
+              </div>
+              <div className="developer" id="last-developer">
+                <div className="developer-content-wrapper">
+                  <div className="avatar">ТГ</div>
+                  <h3 className="text-primary text-17px">Толмачев Г.А.</h3>
+                  <p className="text-tertiary">Разработчик / маркетолог</p>
+                  <p className="text-tertiary">
+                    Разработка, маркетинговая стратегия, продвижение продукта,
+                    анализ рынка
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="section">
+          <div className="team-wrapper">
+            <h2 className="text-primary">
+              Почему Вы должны выбрать именно Famigo?
+            </h2>
+            <div className="reasons">
+              <div className="reason-1">
+                <div className=" wrapper">
+                  <p className="text-tertiary">
+                    <b>Сейчас</b>
+                  </p>
+                  <div className="reason-line">
+                    <svg
+                      className="cross"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                    >
+                      <path d="M18 6L6 18M6 6l12 12"></path>
+                    </svg>
+                    <p className="text-tertiary">
+                      Холодильник — наполнение холодильника приходиться
+                      запоминать
+                    </p>
+                  </div>
+                  <div className="reason-line">
+                    <svg
+                      className="cross"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                    >
+                      <path d="M18 6L6 18M6 6l12 12"></path>
+                    </svg>
+                    <p className="text-tertiary">
+                      Бюджет — в заметках у одного человека
+                    </p>
+                  </div>
+                  <div className="reason-line">
+                    <svg
+                      className="cross"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                    >
+                      <path d="M18 6L6 18M6 6l12 12"></path>
+                    </svg>
+                    <p className="text-tertiary">
+                      Чаты — в разных мессенджерах
+                    </p>
+                  </div>
+                  <div className="reason-line">
+                    <svg
+                      className="cross"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                    >
+                      <path d="M18 6L6 18M6 6l12 12"></path>
+                    </svg>
+                    <p className="text-tertiary">
+                      Геолокация — нужно скачивать отдельное приложение
+                    </p>
+                  </div>
+                  <div className="reason-line">
+                    <svg
+                      className="cross"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                    >
+                      <path d="M18 6L6 18M6 6l12 12"></path>
+                    </svg>
+                    <p className="text-tertiary">
+                      Календарь — заметки и напоминания также в разных
+                      программах и, как правило, у одного человека
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="reason-2">
+                <div className="reason-2 wrapper">
+                  <p className="text-tertiary" style={{ marginTop: -8 }}>
+                    <b>С Famigo</b>
+                  </p>
+                  <div className="reason-line">
+                    <svg
+                      className="ok"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                    >
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                    <p className="text-tertiary">
+                      Холодильник — наполнение холодильника под рукой и
+                      синхронизировано на всех устройствах
+                    </p>
+                  </div>
+                  <div className="reason-line">
+                    <svg
+                      className="ok"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                    >
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                    <p className="text-tertiary">
+                      Бюджет — каждый член семьи может его просматривать и
+                      корректировать
+                    </p>
+                  </div>
+                  <div className="reason-line">
+                    <svg
+                      className="ok"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                    >
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                    <p className="text-tertiary">
+                      Чаты — не нужно постоянно ппереключаться между
+                      приложениями. Всё в одном месте
+                    </p>
+                  </div>
+                  <div className="reason-line">
+                    <svg
+                      className="ok"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                    >
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                    <p className="text-tertiary">
+                      Геолокация — теперь не нужно стороннее приложение, чтобы
+                      знать, где ваши родственники
+                    </p>
+                  </div>
+                  <div className="reason-line">
+                    <svg
+                      className="ok"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                    >
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                    <p className="text-tertiary">
+                      Календарь — синхронизирован на всех устройствах. Теперь
+                      никто не забудет о запланированном семейном ужине
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
