@@ -16,10 +16,18 @@ html {
   background-color: var(--warm-white);
 }
 
+body {
+  margin: 0px;
+}
+
 main {
   border-bottom: solid var(--border) 1px;
 }
 
+footer {
+  background-color: var(--deep-green);
+  width: 100%;
+}
 /* Text*/
 .text-primary {
   font-size: 30px;
@@ -568,4 +576,88 @@ svg.ok {
 .reason-line {
   display: flex;
   gap: 10px;
+}
+
+/*Agitation section*/
+.agitation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 16px;
+  background-color: #fff;
+  border: solid var(--border) 1px;
+  padding: 30px;
+  margin-bottom: 100px;
+}
+
+.logo-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-text img {
+  background-color: var(--deep-green);
+  border-radius: 12px;
+  padding: 10px;
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.deep-green {
+  background-color: var(--deep-green);
+  color: var(--warm-white);
+}
+
+.logo-text h1 {
+  max-width: 400px;
+  color: var(--dark);
+}
+
+#h1-text {
+  color: var(--soft-orange);
+}
+
+/*Footer*/
+
+.footer-section {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  max-width: 1180px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footer-content p {
+  color: var(--green-soft);
+  margin: 50px;
+}
+
+/*Анимация*/
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+  will-change: opacity, transform;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
 }

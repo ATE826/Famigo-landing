@@ -1,7 +1,6 @@
-import { useState } from "react";
 import "./App.css";
 import bg from "./assets/background.png";
-import logo from "./assets/Logo.png";
+import logo from "./assets/Logo.svg";
 import fridgeImg from "./assets/fridge.png";
 import budgetImg from "./assets/budget.png";
 import locationImg from "./assets/location.png";
@@ -608,8 +607,35 @@ function App() {
             </div>
           </div>
         </section>
+        <section className="section">
+          <div className="team-wrapper">
+            <div className="agitation">
+              <div className="logo-text">
+                <img
+                  style={{ width: "35px", height: "35px" }}
+                  src={logo}
+                  alt="Famigo Logo"
+                />
+                <h1 className="text-primary">
+                  Соберите свою семью в <span id="h1-text">едином</span>{" "}
+                  пространстве
+                </h1>
+              </div>
+              <a href="" className="btn-primary deep-green">
+                Добавить семью
+              </a>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer></footer>
+      <footer>
+        <div className="footer-section">
+          <div className="footer-content">
+            <p className="text-tertiary">© 2026 Famigo</p>
+            <p className="text-tertiary">Лендинг Famigo · React</p>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
