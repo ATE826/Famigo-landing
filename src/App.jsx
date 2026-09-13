@@ -258,6 +258,149 @@ function App() {
             </div>
           </div>
         </section>
+        <section className="possibilities-section">
+          <div className="wrapper">
+            <h2 className="text-primary">Всё, что нужно семье каждый день!</h2>
+            <p className="text-secondary">
+              От первых шагов до полноценного семейного пространства — без
+              лишних приложений.
+            </p>
+            <div className="possibilities-grid">
+              <div className="possibility-wrapper">
+                <div className="possibility">
+                  <div class="icon">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                    >
+                      <circle cx="9" cy="8" r="3"></circle>
+                      <path d="M2 20c0-3.3 3.1-6 7-6s7 2.7 7 6"></path>
+                      <circle cx="18" cy="9" r="2.4"></circle>
+                      <path d="M15.5 14c2.9.4 5 2.4 5 6"></path>
+                    </svg>
+                  </div>
+                  <h3 className="text-primary">Общее пространство семьи</h3>
+                  <p className="text-secondary">
+                    Приглашайте близких по ссылке, назначайте роли и держите
+                    всех в курсе того, что происходит дома.
+                  </p>
+                </div>
+              </div>
+              <div className="possibility-wrapper">
+                <div className="possibility">
+                  <div class="icon">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                    >
+                      <path d="M3 12l9-9 9 9"></path>
+                      <path d="M5 10v10h14V10"></path>
+                    </svg>
+                  </div>
+                  <h3 className="text-primary">Дома и пространства</h3>
+                  <p className="text-secondary">
+                    Приглашайте близких по ссылке, назначайте роли и держите
+                    всех в курсе того, что происходит дома.
+                  </p>
+                </div>
+              </div>
+              <div className="possibility-wrapper">
+                <div className="possibility">
+                  <div class="icon">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                    >
+                      <path d="M3 12h18M3 12a9 9 0 0 1 18 0M3 12a9 9 0 0 0 18 0"></path>
+                    </svg>
+                  </div>
+                  <h3 className="text-primary">Общий бюджет</h3>
+                  <p className="text-secondary">
+                    Доходы и расходы по категориям, история операций и понятный
+                    график — без лишних таблиц.
+                  </p>
+                </div>
+              </div>
+              <div className="possibility-wrapper">
+                <div className="possibility">
+                  <div class="icon">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                    >
+                      <rect x="3" y="7" width="18" height="13" rx="2"></rect>
+                      <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                    </svg>
+                  </div>
+                  <h3 className="text-primary">Холодильник</h3>
+                  <p className="text-secondary">
+                    Список продуктов по категориям и срокам годности — видно
+                    всей семье, не только тому, кто заглянул внутрь.
+                  </p>
+                </div>
+              </div>
+              <div className="possibility-wrapper">
+                <div className="possibility">
+                  <div class="icon">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                    >
+                      <path d="M6 3v4M18 3v4"></path>
+                      <rect x="3" y="6" width="18" height="15" rx="2"></rect>
+                      <path d="M3 11h18"></path>
+                    </svg>
+                  </div>
+                  <h3 className="text-primary">Семейный календарь</h3>
+                  <p className="text-secondary">
+                    Ужины, поездки и дела — одно расписание, к которому у всех
+                    есть доступ.
+                  </p>
+                </div>
+              </div>
+              <div className="possibility-wrapper">
+                <div className="possibility">
+                  <div class="icon">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                    >
+                      <path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                    </svg>
+                  </div>
+                  <h3 className="text-primary">Семейный чат</h3>
+                  <p className="text-secondary possibility-secondary-text">
+                    Обсуждайте планы и мелочи в общем чате, не выходя из Famigo.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <footer></footer>
     </>
