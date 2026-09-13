@@ -6,6 +6,7 @@ import budgetImg from "./assets/budget.png";
 import locationImg from "./assets/location.png";
 import chattingImg from "./assets/chatting.jpg";
 import planningImg from "./assets/planning.jpg";
+import Reveal from "./components/Reveal";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         </div>
       </header>
       <main>
+        {/* HERO — без анимации, виден сразу при загрузке */}
         <section className="hero">
           <div className="bg">
             <img src={bg} alt="Семья вместе дома"></img>
@@ -102,19 +104,25 @@ function App() {
             </div>
           </div>
         </section>
+
+        {/* ВСЁ, ЧТО НИЖЕ — анимируется при прокрутке */}
+
         <section>
-          <div className="statement">
-            <p className="text-primary text-statement">
-              <span style={{ color: "var(--dark)" }}>
-                Тёплая, спокойная и технологичная{" "}
-              </span>
-              семейная экосистема — всё необходимое без лишних деталей и
-              визуальной перегрузки.
-            </p>
-          </div>
+          <Reveal>
+            <div className="statement">
+              <p className="text-primary text-statement">
+                <span style={{ color: "var(--dark)" }}>
+                  Тёплая, спокойная и технологичная{" "}
+                </span>
+                семейная экосистема — всё необходимое без лишних деталей и
+                визуальной перегрузки.
+              </p>
+            </div>
+          </Reveal>
+
           <div className="info">
             <div className="info-section">
-              <div className="card-grid card-info">
+              <Reveal className="card-grid card-info">
                 <div className="card-image">
                   <img src={fridgeImg} alt="Fridge image" />
                 </div>
@@ -132,8 +140,9 @@ function App() {
                     уже закончилось.
                   </p>
                 </div>
-              </div>
-              <div className="card-grid card-info">
+              </Reveal>
+
+              <Reveal className="card-grid card-info" delay={80}>
                 <div className="content">
                   <div className="roadmap">
                     <div className="circle"></div>
@@ -150,8 +159,9 @@ function App() {
                 <div className="card-image">
                   <img src={budgetImg} alt="Budget image" />
                 </div>
-              </div>
-              <div className="card-grid card-info">
+              </Reveal>
+
+              <Reveal className="card-grid card-info">
                 <div className="card-image">
                   <img src={chattingImg} alt="Fridge image" />
                 </div>
@@ -168,8 +178,9 @@ function App() {
                     делитесь самым важным. Всё в одном месте!
                   </p>
                 </div>
-              </div>
-              <div className="card-grid card-info">
+              </Reveal>
+
+              <Reveal className="card-grid card-info" delay={80}>
                 <div className="content">
                   <div className="roadmap">
                     <div className="circle"></div>
@@ -186,8 +197,9 @@ function App() {
                 <div className="card-image">
                   <img src={planningImg} alt="Budget image" />
                 </div>
-              </div>
-              <div className="card-grid card-info" id="last-card-info">
+              </Reveal>
+
+              <Reveal className="card-grid card-info" id="last-card-info">
                 <div className="card-image">
                   <img src={locationImg} alt="Fridge image" />
                 </div>
@@ -204,68 +216,76 @@ function App() {
                     оставайтесь в курсе, где находятся ваши близкие.
                   </p>
                 </div>
-              </div>
+              </Reveal>
             </div>
           </div>
         </section>
+
         <section>
-          <div className="visual-info">
-            <div className="visual-info-wrapper">
-              <div className="content">
-                <p className="text-tertiary soft-green text">
-                  Единый визуальный язык
-                </p>
-                <h2 className="text-primary warm-white text">
-                  Один и тот же приятный стиль на любом экране
-                </h2>
-                <p className="text-secondary soft-green text">
-                  Все компоненты веб-приложения соответсвуют специальной
-                  цветовой палитре: тёпло-белый нейтральный фон, зелёный и
-                  оранжевый для взаимодействия с функционалом.
-                </p>
-              </div>
-            </div>
-            <div className="visual-info-wrapper">
-              <div className="content-info-2">
-                <div className="task-1">
-                  <p className="text-tertiary">
-                    Молоко заканчивается — добавить в список?
+          <Reveal>
+            <div className="visual-info">
+              <div className="visual-info-wrapper">
+                <div className="content">
+                  <p className="text-tertiary soft-green text">
+                    Единый визуальный язык
                   </p>
-                  <a href="#">Открыть холодильник</a>
-                </div>
-                <div className="task-2">
-                  <p className="text-tertiary">
-                    Папа создал событие «Семейный ужин» на 19:00
-                  </p>
-                  <a href="#">Календарь</a>
-                </div>
-                <div className="task-3">
-                  <h1
-                    className="text-primary warm-white"
-                    style={{ marginTop: "0px" }}
-                  >
-                    Famigo
-                  </h1>
-                  <p
-                    className="text-tertiary soft-green"
-                    style={{ marginTop: "-10px" }}
-                  >
-                    Папа создал событие «Семейный ужин» на 19:00
+                  <h2 className="text-primary warm-white text">
+                    Один и тот же приятный стиль на любом экране
+                  </h2>
+                  <p className="text-secondary soft-green text">
+                    Все компоненты веб-приложения соответсвуют специальной
+                    цветовой палитре: тёпло-белый нейтральный фон, зелёный и
+                    оранжевый для взаимодействия с функционалом.
                   </p>
                 </div>
               </div>
+              <div className="visual-info-wrapper">
+                <div className="content-info-2">
+                  <div className="task-1">
+                    <p className="text-tertiary">
+                      Молоко заканчивается — добавить в список?
+                    </p>
+                    <a href="#">Открыть холодильник</a>
+                  </div>
+                  <div className="task-2">
+                    <p className="text-tertiary">
+                      Папа создал событие «Семейный ужин» на 19:00
+                    </p>
+                    <a href="#">Календарь</a>
+                  </div>
+                  <div className="task-3">
+                    <h1
+                      className="text-primary warm-white"
+                      style={{ marginTop: "0px" }}
+                    >
+                      Famigo
+                    </h1>
+                    <p
+                      className="text-tertiary soft-green"
+                      style={{ marginTop: "-10px" }}
+                    >
+                      Папа создал событие «Семейный ужин» на 19:00
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
+          </Reveal>
         </section>
+
         <section className="possibilities-section">
           <div className="wrapper">
-            <h2 className="text-primary">Всё, что нужно семье каждый день!</h2>
-            <p className="text-secondary">
-              От первых шагов до полноценного семейного пространства — без
-              лишних приложений.
-            </p>
+            <Reveal>
+              <h2 className="text-primary">
+                Всё, что нужно семье каждый день!
+              </h2>
+              <p className="text-secondary">
+                От первых шагов до полноценного семейного пространства — без
+                лишних приложений.
+              </p>
+            </Reveal>
             <div className="possibilities-grid">
-              <div className="possibility-wrapper">
+              <Reveal className="possibility-wrapper" delay={0}>
                 <div className="possibility">
                   <div className="icon">
                     <svg
@@ -288,8 +308,9 @@ function App() {
                     всех в курсе того, что происходит дома.
                   </p>
                 </div>
-              </div>
-              <div className="possibility-wrapper">
+              </Reveal>
+
+              <Reveal className="possibility-wrapper" delay={80}>
                 <div className="possibility">
                   <div className="icon">
                     <svg
@@ -310,8 +331,9 @@ function App() {
                     составом жильцов и бюджетом.
                   </p>
                 </div>
-              </div>
-              <div className="possibility-wrapper">
+              </Reveal>
+
+              <Reveal className="possibility-wrapper" delay={160}>
                 <div className="possibility">
                   <div className="icon">
                     <svg
@@ -331,8 +353,9 @@ function App() {
                     график — без лишних таблиц.
                   </p>
                 </div>
-              </div>
-              <div className="possibility-wrapper">
+              </Reveal>
+
+              <Reveal className="possibility-wrapper" delay={0}>
                 <div className="possibility">
                   <div className="icon">
                     <svg
@@ -352,8 +375,9 @@ function App() {
                     Список продуктов, который доступен всегда и везде.
                   </p>
                 </div>
-              </div>
-              <div className="possibility-wrapper">
+              </Reveal>
+
+              <Reveal className="possibility-wrapper" delay={80}>
                 <div className="possibility">
                   <div className="icon">
                     <svg
@@ -375,8 +399,9 @@ function App() {
                     есть доступ.
                   </p>
                 </div>
-              </div>
-              <div className="possibility-wrapper">
+              </Reveal>
+
+              <Reveal className="possibility-wrapper" delay={160}>
                 <div className="possibility">
                   <div className="icon">
                     <svg
@@ -395,15 +420,18 @@ function App() {
                     Обсуждайте планы и мелочи в общем чате, не выходя из Famigo.
                   </p>
                 </div>
-              </div>
+              </Reveal>
             </div>
           </div>
         </section>
+
         <section className="section">
           <div className="team-wrapper">
-            <h2 className="text-primary">Команда проекта</h2>
+            <Reveal>
+              <h2 className="text-primary">Команда проекта</h2>
+            </Reveal>
             <div className="team-grid">
-              <div className="developer">
+              <Reveal className="developer" delay={0}>
                 <div className="developer-content-wrapper">
                   <div className="avatar">ЦА</div>
                   <h3 className="text-primary text-17px">Цейсновский А.Э.</h3>
@@ -412,8 +440,9 @@ function App() {
                     Архитектура проекта, разработка, координация команды
                   </p>
                 </div>
-              </div>
-              <div className="developer">
+              </Reveal>
+
+              <Reveal className="developer" delay={100}>
                 <div className="developer-content-wrapper">
                   <div className="avatar">ЛС</div>
                   <h3 className="text-primary text-17px">Лапутин С.А.</h3>
@@ -422,8 +451,9 @@ function App() {
                     Анализ требований, разработка, проработка функциональности
                   </p>
                 </div>
-              </div>
-              <div className="developer" id="last-developer">
+              </Reveal>
+
+              <Reveal className="developer" id="last-developer" delay={200}>
                 <div className="developer-content-wrapper">
                   <div className="avatar">ТГ</div>
                   <h3 className="text-primary text-17px">Толмачев Г.А.</h3>
@@ -433,17 +463,20 @@ function App() {
                     анализ рынка
                   </p>
                 </div>
-              </div>
+              </Reveal>
             </div>
           </div>
         </section>
+
         <section className="section">
           <div className="team-wrapper">
-            <h2 className="text-primary">
-              Почему Вы должны выбрать именно Famigo?
-            </h2>
+            <Reveal>
+              <h2 className="text-primary">
+                Почему Вы должны выбрать именно Famigo?
+              </h2>
+            </Reveal>
             <div className="reasons">
-              <div className="reason-1">
+              <Reveal className="reason-1" delay={0}>
                 <div className=" wrapper">
                   <p className="text-tertiary">
                     <b>Сейчас</b>
@@ -521,8 +554,9 @@ function App() {
                     </p>
                   </div>
                 </div>
-              </div>
-              <div className="reason-2">
+              </Reveal>
+
+              <Reveal className="reason-2" delay={120}>
                 <div className="reason-2 wrapper">
                   <p className="text-tertiary" style={{ marginTop: -8 }}>
                     <b>С Famigo</b>
@@ -603,28 +637,31 @@ function App() {
                     </p>
                   </div>
                 </div>
-              </div>
+              </Reveal>
             </div>
           </div>
         </section>
+
         <section className="section">
           <div className="team-wrapper">
-            <div className="agitation">
-              <div className="logo-text">
-                <img
-                  style={{ width: "35px", height: "35px" }}
-                  src={logo}
-                  alt="Famigo Logo"
-                />
-                <h1 className="text-primary">
-                  Соберите свою семью в <span id="h1-text">едином</span>{" "}
-                  пространстве
-                </h1>
+            <Reveal>
+              <div className="agitation">
+                <div className="logo-text">
+                  <img
+                    style={{ width: "35px", height: "35px" }}
+                    src={logo}
+                    alt="Famigo Logo"
+                  />
+                  <h1 className="text-primary">
+                    Соберите свою семью в <span id="h1-text">едином</span>{" "}
+                    пространстве
+                  </h1>
+                </div>
+                <a href="" className="btn-primary deep-green">
+                  Добавить семью
+                </a>
               </div>
-              <a href="" className="btn-primary deep-green">
-                Добавить семью
-              </a>
-            </div>
+            </Reveal>
           </div>
         </section>
       </main>
