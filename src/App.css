@@ -647,6 +647,9 @@ svg.ok {
   transition:
     opacity 0.7s ease,
     transform 0.7s ease;
+}
+
+.reveal:not(.reveal-visible) {
   will-change: opacity, transform;
 }
 
