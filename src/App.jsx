@@ -27,17 +27,16 @@ function App() {
             </div>
           </div>
           <nav className="nav">
-            <a href="#connected">Как это работает</a>
             <a href="#features">Возможности</a>
+            <a href="#examples">Как это работает</a>
             <a href="#team">Команда</a>
           </nav>
-          <a href="" className="btn-primary">
+          <a href="#button" className="btn-primary">
             Добавить семью
           </a>
         </div>
       </header>
       <main>
-        {/* HERO — без анимации, виден сразу при загрузке */}
         <section className="hero">
           <div className="bg">
             <img src={bg} alt="Семья вместе дома"></img>
@@ -59,8 +58,8 @@ function App() {
                 заметках.
               </p>
               <div className="button">
-                <a href="" className="btn-primary">
-                  Добавть свою семью
+                <a href="#button" className="btn-primary">
+                  Добавить свою семью
                 </a>
                 <p className="text-tertiary near-button-text">
                   Всего за 2 минуты
@@ -105,9 +104,7 @@ function App() {
           </div>
         </section>
 
-        {/* ВСЁ, ЧТО НИЖЕ — анимируется при прокрутке */}
-
-        <section>
+        <section id="features">
           <Reveal>
             <div className="statement">
               <p className="text-primary text-statement">
@@ -221,7 +218,7 @@ function App() {
           </div>
         </section>
 
-        <section>
+        <section id="examples">
           <Reveal>
             <div className="visual-info">
               <div className="visual-info-wrapper">
@@ -425,7 +422,7 @@ function App() {
           </div>
         </section>
 
-        <section className="section">
+        <section className="section" id="team">
           <div className="team-wrapper">
             <Reveal>
               <h2 className="text-primary">Команда проекта</h2>
@@ -657,7 +654,7 @@ function App() {
                     пространстве
                   </h1>
                 </div>
-                <a href="" className="btn-primary deep-green">
+                <a href="#" className="btn-primary deep-green" id="button">
                   Добавить семью
                 </a>
               </div>
