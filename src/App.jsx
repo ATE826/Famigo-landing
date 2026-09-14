@@ -1,6 +1,7 @@
 import "./App.css";
 import bg from "./assets/background.webp";
 import logo from "./assets/Logo.svg";
+import MobileLogo from "./assets/MobileLogo.svg";
 import fridgeImg from "./assets/fridge.webp";
 import budgetImg from "./assets/budget.webp";
 import locationImg from "./assets/location.webp";
@@ -19,6 +20,7 @@ function App() {
                 style={{ width: "35px", height: "35px" }}
                 src={logo}
                 alt="Famigo Logo"
+                id="logo"
               />
             </div>
             <div>
@@ -31,9 +33,12 @@ function App() {
             <a href="#examples">Как это работает</a>
             <a href="#team">Команда</a>
           </nav>
-          <a href="#button" className="btn-primary">
+          <a href="#button" className="btn-primary" id="first-button">
             Добавить семью
           </a>
+        </div>
+        <div className="mobile-logo">
+          <img src={MobileLogo} alt="Famigo logo" />
         </div>
       </header>
       <main>
@@ -42,8 +47,8 @@ function App() {
             <img
               src={bg}
               alt="Семья вместе дома"
-              fetchpriority="high"
-              decoding="async"
+              fetchPriority="high"
+              id="bg"
             ></img>
             <div className="tone"></div>
           </div>
@@ -321,7 +326,7 @@ function App() {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="1.6"
+                      strokeWidth="1.6"
                     >
                       <circle cx="9" cy="8" r="3"></circle>
                       <path d="M2 20c0-3.3 3.1-6 7-6s7 2.7 7 6"></path>
@@ -346,7 +351,7 @@ function App() {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="1.6"
+                      strokeWidth="1.6"
                     >
                       <path d="M3 12l9-9 9 9"></path>
                       <path d="M5 10v10h14V10"></path>
@@ -369,7 +374,7 @@ function App() {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="1.6"
+                      strokeWidth="1.6"
                     >
                       <path d="M3 12h18M3 12a9 9 0 0 1 18 0M3 12a9 9 0 0 0 18 0"></path>
                     </svg>
@@ -391,7 +396,7 @@ function App() {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="1.6"
+                      strokeWidth="1.6"
                     >
                       <rect x="3" y="7" width="18" height="13" rx="2"></rect>
                       <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
@@ -413,7 +418,7 @@ function App() {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="1.6"
+                      strokeWidth="1.6"
                     >
                       <path d="M6 3v4M18 3v4"></path>
                       <rect x="3" y="6" width="18" height="15" rx="2"></rect>
@@ -437,7 +442,7 @@ function App() {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="1.6"
+                      strokeWidth="1.6"
                     >
                       <path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
                     </svg>
@@ -514,7 +519,7 @@ function App() {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="1.6"
+                      strokeWidth="1.6"
                     >
                       <path d="M18 6L6 18M6 6l12 12"></path>
                     </svg>
@@ -529,7 +534,7 @@ function App() {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="1.6"
+                      strokeWidth="1.6"
                     >
                       <path d="M18 6L6 18M6 6l12 12"></path>
                     </svg>
@@ -543,7 +548,7 @@ function App() {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="1.6"
+                      strokeWidth="1.6"
                     >
                       <path d="M18 6L6 18M6 6l12 12"></path>
                     </svg>
@@ -557,7 +562,7 @@ function App() {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="1.6"
+                      strokeWidth="1.6"
                     >
                       <path d="M18 6L6 18M6 6l12 12"></path>
                     </svg>
@@ -571,7 +576,7 @@ function App() {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="1.6"
+                      strokeWidth="1.6"
                     >
                       <path d="M18 6L6 18M6 6l12 12"></path>
                     </svg>
@@ -594,7 +599,7 @@ function App() {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="1.6"
+                      strokeWidth="1.6"
                     >
                       <path d="M20 6L9 17l-5-5"></path>
                     </svg>
@@ -609,7 +614,7 @@ function App() {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="1.6"
+                      strokeWidth="1.6"
                     >
                       <path d="M20 6L9 17l-5-5"></path>
                     </svg>
@@ -624,7 +629,7 @@ function App() {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="1.6"
+                      strokeWidth="1.6"
                     >
                       <path d="M20 6L9 17l-5-5"></path>
                     </svg>
@@ -639,7 +644,7 @@ function App() {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="1.6"
+                      strokeWidth="1.6"
                     >
                       <path d="M20 6L9 17l-5-5"></path>
                     </svg>
@@ -654,7 +659,7 @@ function App() {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="1.6"
+                      strokeWidth="1.6"
                     >
                       <path d="M20 6L9 17l-5-5"></path>
                     </svg>
