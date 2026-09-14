@@ -204,6 +204,7 @@ img {
 
 .hero .bg {
   position: absolute;
+  height: 100vh;
   inset: 0;
   z-index: -1;
   transform: none !important;
