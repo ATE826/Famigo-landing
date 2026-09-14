@@ -1,6 +1,7 @@
 import "./App.css";
 import bg from "./assets/background.webp";
 import logo from "./assets/Logo.svg";
+import MobileLogo from "./assets/MobileLogo.svg";
 import fridgeImg from "./assets/fridge.webp";
 import budgetImg from "./assets/budget.webp";
 import locationImg from "./assets/location.webp";
@@ -19,6 +20,7 @@ function App() {
                 style={{ width: "35px", height: "35px" }}
                 src={logo}
                 alt="Famigo Logo"
+                id="logo"
               />
             </div>
             <div>
@@ -31,9 +33,12 @@ function App() {
             <a href="#examples">Как это работает</a>
             <a href="#team">Команда</a>
           </nav>
-          <a href="#button" className="btn-primary">
+          <a href="#button" className="btn-primary" id="first-button">
             Добавить семью
           </a>
+        </div>
+        <div className="mobile-logo">
+          <img src={MobileLogo} alt="Famigo logo" />
         </div>
       </header>
       <main>
@@ -43,7 +48,7 @@ function App() {
               src={bg}
               alt="Семья вместе дома"
               fetchpriority="high"
-              decoding="async"
+              id="bg"
             ></img>
             <div className="tone"></div>
           </div>
