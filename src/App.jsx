@@ -38,7 +38,7 @@ function App() {
           </a>
         </div>
         <div className="mobile-logo">
-          <img src={MobileLogo} alt="Famigo logo" />
+          <img src={MobileLogo} alt="Famigo logo" className="pacifico" />
         </div>
       </header>
       <main>
