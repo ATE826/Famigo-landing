@@ -352,9 +352,9 @@ img {
     align-items: flex-start;
   }
 
-  .tone {
+  /* .tone {
     height: 100vh !important;
-  }
+  } */
 }
 
 @media (max-width: 480px) {
