@@ -154,10 +154,6 @@ nav a {
     scale: 0.8;
   }
 
-  /* .mobile-logo img {
-    width: 80%;
-    height: 80%;
-  } */
   .nav {
     display: none;
   }
@@ -326,7 +322,7 @@ img {
   .hero-row {
     grid-template-columns: 1fr;
     gap: 40px;
-    margin-top: 130px;
+    margin-top: 90px;
     padding: 0 20px;
   }
 
