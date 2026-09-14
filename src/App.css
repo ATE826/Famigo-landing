@@ -151,13 +151,13 @@ nav a {
   }
 
   .mobile-logo img {
-    scale: 0.5;
+    scale: 0.8;
   }
 
-  .mobile-logo img {
+  /* .mobile-logo img {
     width: 80%;
     height: 80%;
-  }
+  } */
   .nav {
     display: none;
   }
@@ -218,6 +218,9 @@ img {
 
 .tone {
   position: absolute;
+  height: 100dvh;
+  transform: none !important;
+  scale: 1 !important;
   inset: 0;
   background: linear-gradient(
     180deg,
