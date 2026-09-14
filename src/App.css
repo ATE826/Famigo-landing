@@ -29,7 +29,6 @@ footer {
   background-color: var(--deep-green);
   width: 100%;
 }
-
 /* Text*/
 .text-primary {
   font-size: 30px;
@@ -83,7 +82,6 @@ nav a {
   align-items: center;
   gap: 10px;
 }
-
 .wrap {
   display: flex;
   justify-content: space-between;
@@ -145,7 +143,6 @@ nav a {
   .logo {
     display: none;
   }
-
   .mobile-logo {
     display: flex;
     justify-content: center;
@@ -157,6 +154,10 @@ nav a {
     scale: 0.8;
   }
 
+  /* .mobile-logo img {
+    width: 80%;
+    height: 80%;
+  } */
   .nav {
     display: none;
   }
@@ -194,7 +195,6 @@ nav a {
 }
 
 /* Section hero */
-
 img {
   display: block;
   width: 100%;
@@ -203,48 +203,30 @@ img {
 }
 
 .hero {
-  position: relative;
-
-  /*
-    svh = стабильная высота viewport.
-    В отличие от dvh она не пересчитывается при
-    появлении/скрытии адресной строки на мобильном.
-  */
-  min-height: 100svh;
+  min-height: 100vh;
+  min-height: 100dvh;
 }
 
-/*
-  .bg и .tone теперь всегда имеют одинаковый размер,
-  потому что оба растягиваются на весь .hero.
-*/
 .hero .bg {
   position: absolute;
+  height: 100dvh;
   inset: 0;
-  width: 100%;
-  height: 100%;
   z-index: -1;
-
-  object-fit: cover;
-
   transform: none !important;
   scale: 1 !important;
 }
 
 .tone {
   position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-
+  height: 100dvh;
   transform: none !important;
   scale: 1 !important;
-
+  inset: 0;
   background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0.68) -10%,
     rgba(255, 98, 14, 0.16) 100%
   );
-
   mix-blend-mode: multiply;
   pointer-events: none;
 }
@@ -336,7 +318,6 @@ img {
 .card-row.last-card-category {
   border: none;
 }
-
 .text-secondary.card-category.last-cartd-category {
   color: var(--soft-orange);
 }
@@ -370,6 +351,10 @@ img {
     gap: 12px;
     align-items: flex-start;
   }
+
+  /* .tone {
+    height: 100vh !important;
+  } */
 }
 
 @media (max-width: 480px) {
@@ -412,7 +397,6 @@ img {
   align-items: center;
   padding: 100px 0 50px;
 }
-
 .text-primary.text-statement {
   color: var(--muted);
   max-width: 700px;
@@ -874,6 +858,7 @@ svg.ok {
 
 .logo-text h1 {
   max-width: 400px;
+  color: var(--dark);
 }
 
 #h1-text {
