@@ -133,10 +133,6 @@ nav a {
   display: none;
 }
 
-.pacifico {
-  font-family: "Pacifico", sans-serif;
-}
-
 @media (max-width: 900px) {
   .wrap {
     padding: 0 20px;
@@ -349,11 +345,11 @@ img {
     align-items: flex-start;
   }
 
-  #bg {
-    height: 85% !important;
+  img {
+    height: 100vh !important;
   }
   .tone {
-    height: 85% !important;
+    height: 100vh !important;
   }
 }
 
