@@ -143,12 +143,14 @@ nav a {
   .logo {
     display: none;
   }
-  /* .mobile-logo {
+  .mobile-logo {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-  } */
+    width: 50vh;
+    height: 50vh;
+  }
 
   .mobile-logo img {
     width: 80%;
@@ -345,9 +347,6 @@ img {
     align-items: flex-start;
   }
 
-  img {
-    height: 100vh !important;
-  }
   .tone {
     height: 100vh !important;
   }
