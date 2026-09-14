@@ -199,7 +199,8 @@ img {
 }
 
 .hero {
-  min-height: 74vh;
+  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .hero .bg {
