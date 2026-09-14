@@ -322,7 +322,7 @@ img {
   .hero-row {
     grid-template-columns: 1fr;
     gap: 40px;
-    margin-top: 160px;
+    margin-top: 90px;
     padding: 0 20px;
   }
 
@@ -391,7 +391,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px 0 50px;
+  padding: 50px 0 50px !important;
 }
 .text-primary.text-statement {
   color: var(--muted);
