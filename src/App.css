@@ -322,7 +322,7 @@ img {
   .hero-row {
     grid-template-columns: 1fr;
     gap: 40px;
-    margin-top: 90px;
+    margin-top: 160px;
     padding: 0 20px;
   }
 
