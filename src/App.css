@@ -28,6 +28,61 @@ footer {
   background-color: var(--deep-green);
   width: 100%;
 }
+
+/*Cookie*/
+.cookie-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  max-width: 640px;
+  width: 92%;
+  background: var(--warm-white, #1f1f1f);
+  color: #fff;
+  padding: 20px 24px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.cookie-text {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.cookie-text a {
+  color: var(--muted); /* под ваш зелёный акцент, поправьте под палитру */
+  text-decoration: underline;
+}
+
+.cookie-accept {
+  align-self: flex-end;
+  border: none !important;
+  background-color: var(--deep-green) !important;
+  color: var(--warm-white) !important;
+}
+
+.cookie-accept:hover {
+  background-color: var(--soft-orange) !important;
+}
+
+@media (max-width: 480px) {
+  .cookie-banner {
+    bottom: 200px;
+    border-radius: 14px 14px 0 0;
+  }
+  .cookie-accept {
+    align-self: stretch;
+    text-align: center;
+  }
+}
+
 /* Text*/
 .text-primary {
   font-size: 30px;

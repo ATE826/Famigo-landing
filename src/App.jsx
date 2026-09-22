@@ -1,4 +1,7 @@
 import "./App.css";
+
+import CookieBanner from "./components/CoockieBanner";
+
 import bg from "./assets/background.webp";
 import logo from "./assets/Logo.svg";
 import MobileLogo from "./assets/MobileLogo.svg";
@@ -12,6 +15,7 @@ import Reveal from "./components/Reveal";
 function App() {
   return (
     <>
+      <CookieBanner />
       <header>
         <div className="wrap">
           <div className="logo">
