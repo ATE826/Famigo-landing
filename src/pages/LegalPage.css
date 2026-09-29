@@ -1,0 +1,88 @@
+/* Страница документов. Переменные и шрифты — из App.css */
+
+.legal-header {
+  background-color: var(--deep-green);
+  padding-bottom: 30px;
+}
+.legal-header .wrap { padding: 0 20px; box-sizing: border-box; }
+.legal-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+
+.legal-main { max-width: 1180px; margin: 0 auto; padding: 50px 20px 100px; border-bottom: none; }
+
+.legal-layout {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: 40px;
+  align-items: start;
+}
+
+/* Оглавление */
+.legal-toc { position: sticky; top: 24px; }
+.legal-toc .legal-toc-title { font-size: 17px; margin: 0 0 12px; }
+.legal-toc ol { list-style: none; margin: 0; padding: 0; border-left: 1px solid var(--border); }
+.legal-toc a {
+  display: block;
+  margin-left: -1px;
+  padding: 6px 0 6px 14px;
+  border-left: 2px solid transparent;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--muted);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.legal-toc a:hover, .legal-toc a:focus-visible {
+  color: var(--dark);
+  border-left-color: var(--soft-orange);
+}
+
+/* Документ */
+.legal-doc {
+  background-color: #fff;
+  border: solid var(--border) 1px;
+  border-radius: 16px;
+  padding: 48px 56px;
+}
+.legal-doc h1.text-primary { font-size: 40px; line-height: 1.15; margin: 0 0 8px; }
+.legal-doc .legal-meta { margin: 0 0 8px; }
+.legal-doc h2.text-primary {
+  font-size: 22px;
+  margin: 40px 0 12px;
+  padding-top: 28px;
+  border-top: solid var(--border) 1px;
+  scroll-margin-top: 20px;
+}
+.legal-doc p.text-secondary { margin: 0 0 14px; }
+.legal-doc ul { margin: 0 0 14px; padding-left: 22px; }
+.legal-doc li.text-secondary { margin-bottom: 8px; padding-left: 4px; }
+.legal-doc li::marker { color: var(--soft-orange); }
+.legal-doc strong { font-weight: 600; }
+.legal-doc a {
+  color: var(--deep-green);
+  text-underline-offset: 3px;
+  word-break: break-word;
+  transition: color 0.3s ease-in-out;
+}
+.legal-doc a:hover { color: var(--soft-orange); }
+.legal-doc code {
+  font-size: 0.88em;
+  background-color: var(--green-soft);
+  color: var(--green-dark);
+  padding: 2px 6px;
+  border-radius: 6px;
+  word-break: break-all;
+}
+
+@media (max-width: 900px) {
+  .legal-main { padding: 30px 20px 60px; }
+  .legal-layout { grid-template-columns: 1fr; }
+  .legal-toc { display: none; }
+  .legal-doc { padding: 28px 22px; }
+  .legal-doc h1.text-primary { font-size: 28px; }
+  .legal-doc h2.text-primary { font-size: 20px; }
+  .legal-header .wrap { flex-wrap: nowrap; }
+  .legal-header .btn-primary { padding: 9px 16px; font-size: 15px; }
+  .legal-header .brand-name { font-size: 24px; }
+  .legal-header .brand-tag { display: none; }
+}

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function CookieBanner() {
   const [visible, setVisible] = useState(
@@ -25,21 +26,13 @@ function CookieBanner() {
         </a>{" "}
         в целях улучшения и обеспечения работоспособности сайта, обрабатываем
         персональные данные в соответствии с{" "}
-        <a
-          href="https://dogovor.ru/pages/view/politika-konfidencialnosti"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <Link to="/privacy" target="_blank" rel="noreferrer">
           Политикой конфиденциальности
-        </a>{" "}
+        </Link>{" "}
         и{" "}
-        <a
-          href="https://dogovor.ru/pages/view/soglasie-na-obrabotku-personalnyh-dannyh"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <Link to="/consent" target="_blank" rel="noreferrer">
           Согласием на обработку персональных данных
-        </a>
+        </Link>
         .
       </p>
 
